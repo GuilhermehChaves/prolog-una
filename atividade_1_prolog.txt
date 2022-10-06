@@ -1,0 +1,52 @@
+/* a) Listar todas as mães */
+write("Mães"), nl,
+mae(X, Y), write(X), nl;
+
+/* b) Listar todas as filhas */
+write("Filhas"), nl,
+mae(X, Y), feminino(Y), write(Y), nl;
+
+/* c) Listar todos os filhos */
+write("Filhos"), nl,
+mae(X, Y), masculino(Y), write(Y), nl;
+
+/* d) Listar as avós. */
+write("Avós"), nl,
+mae(X, Y), mae(Z, X);
+pai(X, Y), mae(Z, X), write(Z), nl;
+
+/* e) Listar os avôs. */
+write("Avôs"), nl,
+mae(X, Y), pai(Z, X);
+pai(X, Y), pai(Z, X), write(Z), nl;
+
+/* f) Listar os netos. */
+write("Netos"), nl,
+mae(X, Y), pai(Z, X), masculino(Y), write(Y), nl;
+pai(X, Y), pai(Z, X), masculino(Y), write(Y), nl;
+
+/* g) Listar os netas. */
+write("Netas"), nl,
+mae(X, Y), pai(Z, X), feminino(Y), write(Y), nl;
+pai(X, Y), pai(Z, X), feminino(Y), write(Y), nl;
+
+/* h) Listar as irmãs. */
+write("irmãs"), nl,
+irma(X, Y), write(X), nl;
+
+/* i) Listar os irmãos. */
+write("irmãos"), nl,
+irmao(X, Y), write(X), nl;
+
+/* j) Listar os filhos de maria */
+write("filhos de maria"), nl,
+mae(maria, Y), masculino(Y), write(Y), nl;
+
+/* k) filhas de silvia */
+write("filhas de silvia"), nl,
+mae(silvia, Y), feminino(Y), write(Y), nl;
+
+/* l) filhos de rodrigo */
+write("filhos de rodrigo"), nl,
+pai(rodrigo, Y), masculino(Y), write(Y), nl
+
