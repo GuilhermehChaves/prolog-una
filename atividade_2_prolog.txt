@@ -1,0 +1,31 @@
+/* a) herdam de pessoa */
+write("herdam de pessoa"), nl,
+herda(X, "ClsPessoa"), write(X), nl;
+
+/* b) herdam de Aluno */
+write("herdam de aluno"), nl,
+herda(X, "ClsAluno"), write(X), nl;
+
+/* c) herdam de Professor */
+write("herdam de professor"), nl,
+herda(X, "ClsProfessor"), write(X), nl;
+
+/* d) contrata a interface pessoa */
+write("contrata a interface pessoa"), nl,
+contrata(X, "ItfPessoa"), write(X), nl;
+
+/* e) contrata a interface professor */
+write("contrata a interface professor"), nl,
+contrata(X, "ItfProfessor"), write(X), nl;
+
+/* f) filhas da classe pessoa */
+write("filhas da classe pessoa"), nl,
+subclasse(X, "ClsPessoa"), write(X), nl;
+
+/* g) filhas da classe professor */
+write("filhas da classe professor"), nl,
+subclasse(X, "ClsProfessor"), write(X), nl;
+
+/* h) classe aluno implementa */
+write("classe aluno implementa"), nl,
+implementa("ClsAluno", Y), write(Y), nl
